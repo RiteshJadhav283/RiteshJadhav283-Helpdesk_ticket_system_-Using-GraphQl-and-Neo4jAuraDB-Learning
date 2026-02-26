@@ -1,0 +1,42 @@
+{
+  "name": "helpdesk_ticket_system",
+  "version": "1.0.0",
+  "description": "GraphQL API for a helpdesk ticket management system",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --runInBand --forceExit",
+    "test:coverage": "jest --runInBand --forceExit --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "testTimeout": 30000
+  },
+  "keywords": [
+    "graphql",
+    "helpdesk",
+    "apollo",
+    "sequelize",
+    "postgresql"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^5.4.0",
+    "dotenv": "^17.3.1",
+    "graphql": "^16.13.0",
+    "graphql-tag": "^2.12.6",
+    "pg": "^8.19.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.14",
+    "sqlite3": "^5.1.7"
+  }
+}
